@@ -1,14 +1,9 @@
+/*animating individual elements */
 .animatedStack {
-    
     width: 100px;
     height: 50px;
     position: absolute;
-    /* -webkit-animation: fall;
-    -webkit-animation-duration: 3s;
-    -webkit-animation-fill-mode: forwards;
-    -webkit-animation-timing-function: ease-in-out; */
-    opacity: 0;
-    
+    opacity: 0;    
     top:0px;
     left: 30px;
     background-color: #b39ddb;
@@ -18,9 +13,9 @@
     font-family: 'small';
     font-size: 24px;
     color: #263238;
-    
 }
 
+/*fall animation */
 @-webkit-keyframes fall{
     0% {opacity: 0;}
     25% {left: 0px; top: 0px; opacity: 1;}
