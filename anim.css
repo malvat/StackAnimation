@@ -1,0 +1,204 @@
+.animatedStack {
+    
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    /* -webkit-animation: fall;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-timing-function: ease-in-out; */
+    opacity: 0;
+    
+    top:0px;
+    left: 30px;
+    background-color: #b39ddb;
+    padding: 20px;   
+    border: 1px solid white;
+    text-align: center;
+    font-family: 'small';
+    font-size: 24px;
+    color: #263238;
+    
+}
+
+@-webkit-keyframes fall{
+    0% {opacity: 0;}
+    25% {left: 0px; top: 0px; opacity: 1;}
+    50% {left: 100px; top: 0px; opacity: 1;}
+    100% {left: 100px; top: 200px; opacity: 1;}
+}
+
+.removeElement {
+    border: red 2px solid;
+    width: 100px;
+    height: 50px;
+    position: relative;
+    -webkit-animation: remove;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-timing-function: ease-in-out;
+    opacity: 1;
+}
+
+@-webkit-keyframes remove {
+    0% {left: 100px;}
+    100% {left: 300px;}
+    
+}
+
+.top{
+    color: white;
+    position: absolute;
+    top: 536px;
+    left: 100px;
+    opacity: 0;
+    
+    font-family: 'small';
+    font-size: 20px;
+   
+}
+
+@-webkit-keyframes glowing {
+    0% {font-size: 16px;}
+    50% {font-size: 20px;}
+    100% {font-size: 16px;}
+}
+
+@font-face {
+    font-family: "Bebas Neue Thin";
+    src:url('heading.ttf')
+}
+
+@font-face {
+    font-family: "content";
+    src:url('content.ttf')
+}
+
+@font-face {
+    font-family: "small";
+    src:url('small.ttf')
+}
+
+#heading {
+    font-size: 100px;
+    font-family: 'Bebas Neue Thin';
+    left: 45%;
+    top:-100px;
+    margin-left: -50px;
+    position: absolute;
+    color: white;
+    
+}
+
+body{
+    background-color:  #363636;
+}
+
+#animateS{
+    position: relative;
+    -webkit-animation: falling;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#animateT{
+    position: relative;
+    
+    -webkit-animation: falling;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+#animateA{
+    position: relative;
+    -webkit-animation: falling;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+#animateC{
+    position: relative;
+    -webkit-animation: falling;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+#animateK{
+    position: relative;
+    -webkit-animation: falling;
+    animation-duration: 1s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes falling{
+    from {top : -100px;}
+    to {top: 100px;}
+}
+
+.butt{
+    border: white 1px solid;
+    background-color: transparent;
+    padding: 10px;
+    font-size: 24px;
+    color: white;
+    font-family: 'content';
+    font-weight: 500;
+    transition: border 0.5s;
+}
+
+.butt:active{
+    
+    color: #959595;
+}
+.butt:hover{
+    border: #9575cd 1px solid;
+    
+}
+.butt:focus{
+    outline: 0;
+    border: #9575cd 1px solid;
+}
+
+.buttons {
+    left: 45%;
+    position: absolute;
+    margin-left: -50px;
+    top: 80%;
+
+}
+
+.information {
+    color: white;
+    font-family: "content";
+    font-size: 34px;
+    position: absolute;
+    left: 45%;
+    top: 45%;
+    text-align: center;
+}
+
+.code_sample {
+    width: 400px;
+    height: 400px;
+    border: white 1px solid;
+    right: 2%;
+    top: 20%;
+    position: absolute;
+    padding: 20px;
+    font-family: 'small';
+    color: white;
+    font-size: 21px;
+    transition: padding 0.5s, border 0.5s;
+    
+}
+
+.code_sample:hover{
+    padding: 24px;
+    border: #9575cd 1px solid;
+}
+
+
+.extra_information {
+    color: #ef5350;
+}

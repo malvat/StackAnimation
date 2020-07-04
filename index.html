@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>
+            Stack Animated Program
+        </title>
+
+        <link rel="stylesheet" href="anim.css">
+        <script src="anim.js"></script>
+    </head>
+
+    <body>
+        <div id="heading">
+            <span class="animateHeading" id="animateS">S</span>
+            <span class="animateHeading" id="animateT">T</span>
+            <span class="animateHeading" id="animateA">A</span>
+            <span class="animateHeading" id="animateC">C</span>
+            <span class="animateHeading" id="animateK">K</span>
+        </div>
+        <div id="stack1" class="animatedStack">
+            1
+        </div>
+        <div id="stack2" class="animatedStack">
+            2
+        </div>
+        <div id="stack3" class="animatedStack">
+            3
+        </div>
+        <div class="top" id="top">
+            T&nbsp;O&nbsp;P&nbsp; &rarr;
+        </div>
+        <div class="information">
+            <div>
+                Size &rarr; 3
+            </div>
+            <div class="top_information" id="top_information">
+                TOP &rarr; -1
+            </div>
+
+            <div class="array_information" id='array_information'>
+                Array &rarr; [0, 0, 0]
+
+            </div>
+
+            <div class="extra_information" id='extra_information'>
+
+            </div>
+
+        </div>
+        <div class='buttons'>
+            <button class='butt' onclick="animateStack()">ADD ELEMENT</button>
+            <button class='butt' onclick="remove()">REMOVE ELEMENT</button>
+        </div>
+
+        <div class='code_sample' id='code_sample'>
+            <span>
+                <h1>
+                    Introduction
+                </h1>
+                <p>
+                    A stack is a conceptual structure consisting
+                    of a set of homogeneous elements and is based 
+                    on the principle of last in first out (LIFO). 
+                    It is a commonly used abstract data type with 
+                    two major operations, namely push and pop. 
+                    Push and pop are carried out on the topmost element, 
+                    which is the item most recently added to the stack. 
+                    The push operation adds an element to the stack 
+                    while the pop operation removes an element 
+                    from the top position. The stack concept is used 
+                    in programming and memory organization in computers.
+                </p>
+            </span>
+        </div>
+        
+    </body>
+</html>
