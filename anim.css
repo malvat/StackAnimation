@@ -16,49 +16,42 @@
 }
 
 /*fall animation */
-@-webkit-keyframes fall{
+@keyframes fall{
     0% {opacity: 0;}
     25% {left: 0px; top: 0px; opacity: 1;}
     50% {left: 100px; top: 0px; opacity: 1;}
     100% {left: 100px; top: 200px; opacity: 1;}
 }
 
+/* element when removed  */
 .removeElement {
     border: red 2px solid;
     width: 100px;
     height: 50px;
     position: relative;
-    -webkit-animation: remove;
-    -webkit-animation-duration: 2s;
-    -webkit-animation-fill-mode: forwards;
-    -webkit-animation-timing-function: ease-in-out;
+    animation: remove 2s forwards ease-in-out;
     opacity: 1;
 }
 
-@-webkit-keyframes remove {
+/* keyframe animation for remove  */
+@keyframes remove {
     0% {left: 100px;}
     100% {left: 300px;}
     
 }
 
+/* arrow indicating the top element of the stack */
 .top{
     color: white;
     position: absolute;
     top: 536px;
     left: 100px;
     opacity: 0;
-    
     font-family: 'small';
     font-size: 20px;
-   
 }
 
-@-webkit-keyframes glowing {
-    0% {font-size: 16px;}
-    50% {font-size: 20px;}
-    100% {font-size: 16px;}
-}
-
+/* different fonts for different things  */
 @font-face {
     font-family: "Bebas Neue Thin";
     src:url('heading.ttf')
@@ -74,6 +67,7 @@
     src:url('small.ttf')
 }
 
+/* heading for the program  */
 #heading {
     font-size: 100px;
     font-family: 'Bebas Neue Thin';
@@ -82,97 +76,102 @@
     margin-left: -50px;
     position: absolute;
     color: white;
-    
 }
 
+/* make it dark  */
 body{
     background-color:  #363636;
 }
 
+/* animate the letter s  */
 #animateS{
     position: relative;
-    -webkit-animation: falling;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
+    animation: falling 1s forwards;
 }
 
+/* animate the letter t */
 #animateT{
     position: relative;
-    
-    -webkit-animation: falling;
-    animation-duration: 1s;
+    animation: falling 1s forwards;
     animation-delay: 1s;
-    animation-fill-mode: forwards;
-}
-#animateA{
-    position: relative;
-    -webkit-animation: falling;
-    animation-duration: 1s;
-    animation-delay: 2s;
-    animation-fill-mode: forwards;
-}
-#animateC{
-    position: relative;
-    -webkit-animation: falling;
-    animation-duration: 1s;
-    animation-delay: 3s;
-    animation-fill-mode: forwards;
-}
-#animateK{
-    position: relative;
-    -webkit-animation: falling;
-    animation-duration: 1s;
-    animation-delay: 4s;
-    animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes falling{
+/* animate the letter a  */
+#animateA{
+    position: relative;
+    animation: falling 1s forwards;
+    animation-delay: 2s;
+}
+
+/* animate the letter c  */
+#animateC{
+    position: relative;
+    animation: falling 1s forwards;
+    animation-delay: 3s;
+}
+
+/* animate the letter k  */
+#animateK{
+    position: relative;
+    animation: falling 1s forwards;
+    animation-delay: 4s;
+}
+
+/* general falling animation for letters  */
+@keyframes falling{
     from {top : -100px;}
     to {top: 100px;}
 }
 
+/* buttons to add or remove elements  */
 .butt{
     border: white 1px solid;
     background-color: transparent;
-    padding: 10px;
-    font-size: 24px;
+    padding: 10px 24px;
+    font-size: 22px;
     color: white;
     font-family: 'content';
     font-weight: 500;
-    transition: border 0.5s;
+    transition: border 0.2s;
+    cursor: pointer;
+    letter-spacing: 3px;
 }
 
 .butt:active{
-    
     color: #959595;
 }
+
 .butt:hover{
-    border: #9575cd 1px solid;
-    
-}
-.butt:focus{
-    outline: 0;
     border: #9575cd 1px solid;
 }
 
+.butt:focus{
+    border: #9575cd 1px solid;
+}
+
+/* button container  */
 .buttons {
-    left: 45%;
+    left: 42%;
+    right: 35%;
     position: absolute;
     margin-left: -50px;
     top: 80%;
-
 }
 
+/* information about the pointers and array  */
 .information {
     color: white;
     font-family: "content";
     font-size: 34px;
     position: absolute;
-    left: 45%;
+    left: 40%;
+    right: 40%;
     top: 45%;
     text-align: center;
+    letter-spacing: 3px;
 }
 
+/* information about the function and such in side  */
 .code_sample {
     width: 400px;
     height: 400px;
@@ -183,17 +182,19 @@ body{
     padding: 20px;
     font-family: 'small';
     color: white;
-    font-size: 21px;
     transition: padding 0.5s, border 0.5s;
-    
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    font-size: 18px;
 }
 
+/* information about the function when hover  */
 .code_sample:hover{
     padding: 24px;
     border: #9575cd 1px solid;
 }
 
-
+/* warning errors  */
 .extra_information {
     color: #ef5350;
 }
